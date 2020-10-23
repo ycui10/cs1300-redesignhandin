@@ -1,14 +1,254 @@
 <!doctype html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
-  <head>
-    <title>INSERT TITLE HERE!</title>
+    	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-  <body>
-    <!-- TODO: put your HTML code here! -->
-  </body>
-</html>
+    <title>Responsive Redesign on Sydney's Press Page</title>
+
+<body>
+	<nav class = "navbar navbar-light" style = "background-color: #FAE3D1">
+			<a class = "navbar-brand" href = "#" >Responsive Redesign</a>
+	</nav>
+	<div class = "container-fluid">
+      <div class ="row justify-content-center">
+         <h3>
+            Redesign on Sydney's Press Page
+        </h3>
+      </div>
+      <div class ="row justify-content-center" style = "margin-bottom: 1vw">
+        <img class="sydney-web-page" src="sydney-web-view-100%.png">
+      </div>
+      <div class ="row justify-content-center">
+        <a class = "link" href="https://www.sydneypvd.com/about"> Sydney's Press Page </a> 
+      </div>
+      <div class ="row">
+          <p>
+            For this project, I chose to redesign the press page of a local Cafe in Providence, which is sydney.
+          </p>
+          <p>
+            Sydney is my favorite Cafe in Providence! I study at sydney and love to spend time with my friends there. Unfortunately, it's temporarily closed due to the Pandemic. Hope you could stop by and try their incredible Matcha Latte when it’s reopened. 
+         </p>
+      </div>
+
+      <div class = "row">
+          <h5>
+            Finding Problems
+          </h5> 
+          <p> <br><br>
+
+            Click the ">" button to see 100% web view, 70% web view, tablet view, and phone view respectively.
+          </p>
+      </div>
+         
+      <div class = "row justify-content-center">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="20000">
+                <img class="d-block w-100" src="sydney-web-view-100%.png" alt="First slide">
+              </div>
+            <div class="carousel-item" data-interval="20000">
+              <img class="d-block w-100" src="sydney-web-view-70%.png" alt="Second slide">
+            </div>
+            <div class="carousel-item" data-interval="20000">
+              <img class="d-block w-100" src="sydney-ipad-view.png" alt="Third slide">
+            </div>
+            <div class="carousel-item" data-interval="20000">
+              <img class="d-block w-100" src="sydney-iphone-view.png" alt="Fourth slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          </div>
+      </div>
+
+
+      <div class = "row"  style = "margin-bottom: 1vw;">
+          <h5>
+            Usability Problem
+          </h5>
+      </div>
+
+      <div class = "row" style="background-color: #FAE3D1; padding:3vw;">
+          <div class = "list">
+                <li> The <b> news titles </b> under the section <b> press clippings </b> looks like a plain text instead of a clickable text</li> 
+                <li> The <b> news titles </b> are not eye-catching </li> 
+                <li> The display of the embedded video is not straightforward. Hard to tell there's a video in the web page (see the screenshot of 70% web view). </li>
+          </div>
+      </div>
+
+      <div class = "row"  style = "margin-bottom: 1vw;">
+          <h5>
+            Learnability Problem
+          </h5>
+      </div>
+
+      <div class = "row" style="background-color: #FAE3D1; padding:3vw; margin-bottom: 0px;">
+          <div class = "list">
+                <li> 
+                  In the mobile version, “menu” icon on the top of sydney is confusing: it could refer to  <b> the menu of the website or the menu of the Cafe </b>
+                </li> 
+                <li> 
+                  In fact, the "menu" on the left image refers to the menu of the website, and the first "menu" on the right image refers to the menu of the Cafe
+                </li> 
+
+          </div>
+          
+      </div>
+
+      <div class = "row justify-content-center" style="background-color: #FAE3D1; padding-bottom:3vw; margin-top: 0px;">
+          <img class="example-image" src="menu.png">
+          <img class="example-image" src="menu2.png">
+      </div>
+
+      <div class = "row"  style = "margin-bottom: 1vw;">
+          <h5>
+            Memorability Problem
+          </h5>
+      </div>
+
+      <div class = "row" style="background-color: #FAE3D1; padding:3vw;">
+          <div class = "list">
+                <li> 
+                  In the mobile version, “menu” icon on the top of sydney may cause potential memorability issues: “menu” should contain the following sub-categories: home, food menu, baked goods, press, locations, gift cards instead of displaying menu with those sub-categories all together. Users may forget how to navigate the page when they leave the page and then return to it (See the images above). 
+                </li> 
+          </div>
+      </div>
+    
+      <div class = "row"  style = "margin-bottom: 1vw;">
+          <h5>
+            Accessibility Problem
+          </h5>
+      </div>
+
+      <div class = "row" style="background-color: #FAE3D1; padding:3vw;">
+          <p>
+            I used WAVE and find some potential accessibility issues listed below:
+          </p>
+          <div class = "list">
+                <li> 
+                  When users hover/click on the "press" button in the menu, the button change its color from black to light pink to indicate users' action. The button is also in light pink if the users are currently browsing the "press" page. However, WAVE suggests the <b> color contrast </b> between the light pink text and the white background is <b>low</b>.
+                </li> 
+                <li>
+                  There's <b>no alternative text</b> for the picture showcasing the Cafe in the web page.
+                </li>
+                <li>
+                  When I use WAVE to see how would a screen reader read the web page, I found, for the customer’s review section, the screen reader only reads the name of the reviewer but not their review to the cafe.
+                </li>
+          </div>
+      </div>
+
+      <div class = "row"  style = "margin-bottom: 1vw;">
+          <h5>
+            Visual Redesign 
+          </h5>
+      </div>
+
+      <div class = "row" style="background-color: #FAE3D1; padding:3vw;">
+          <p>
+            To solve the problem mentioned above, I made the following changes:
+          </p>
+          <div class = "list">
+              <ol type="1">  
+                <li> 
+                  Add <b>underlines</b> to the news titles to indicate they are <b>clickable</b> In addition, when users hover over the links, the color of the title change to light pink.
+                </li> 
+                <li>
+                  Make the video embedded in the web page. Show the cover of the video so that users know there's a video in the web page.
+                </li>
+                <li>
+                  Use a <b>nav bar</b> to represent the <b>menu of the website</b>. In this case, the "menu" in the page now only represents the menu of the Cafe. Make the nav bar responsive. This would also solve the hierarchy issue mentioned in the Memorability Problem section.
+                </li>
+                <li>
+                  <b>Add an alternative text</b> to the image howcasing the Cafe in the web page.
+                </li>
+                <li>
+                  Make the <b>color contrast</b>  between the buttons and the background <b>bigger</b>  (see high-fi prototypes for more details).
+                </li>
+          </div>
+          
+      </div>
+
+
+      <div class = "row"  style = "margin-bottom: 1vw;">
+          <h5>
+            Lo-fi prototypes of the web view, table view, phone view:
+          </h5>
+      </div>
+
+      <div class = "row justify-content-center" style="background-color: #FAE3D1; padding-top:3vw; padding-bottom:3vw; margin-top: 0px; margin-bottom: 0px;">
+        <img class="prototypes" src="lofi-web.png">
+        <img class="prototypes" src="lofi-pad.png"> 
+      </div>
+      <div class = "row justify-content-center" style="background-color: #FAE3D1; padding-bottom:3vw; margin-top: 0px;">
+        <img class="prototypes" src="lofi-phone.png" style="width: 25vw; padding-right: 2vw">
+        <img class="prototypes" src="lofi-phone2.png" style="width: 25vw; padding-right: 2vw">
+      </div>
+      
+       <div class = "row"  style = "margin-bottom: 1vw;">
+          <h5>
+            Hi-fi prototypes of the web view, table view, phone view
+          </h5>
+      </div>
+
+      <div class = "row justify-content-center" style="background-color: #FAE3D1; padding-top:3vw; padding-bottom:3vw; margin-top: 0px; margin-bottom: 0px;">
+        <img class="prototypes" src="hifi-web.png">
+        <img class="prototypes" src="hifi-pad.png"> 
+      </div>
+      <div class = "row justify-content-center" style="background-color: #FAE3D1; padding-bottom:3vw; margin-top: 0px;">
+        <img class="prototypes" src="hifi-phone.png" style="width: 25vw; padding-right: 2vw">
+        <img class="prototypes" src="hifi-phone2.png" style="width: 25vw; padding-right: 2vw">
+      </div>
+
+      <div class = "row"  style = "margin-bottom: 1vw;">
+          <h5>
+            Visual Design Style Guide
+          </h5>
+      </div>
+
+      <div class = "row justify-content-center" style="background-color: #FAE3D1; padding-top:3vw; padding-bottom:3vw; margin-top: 0px;">
+        <img class="prototypes" src="Visual Style Guide.png">
+      </div>
+
+      <div class = "row"  style = "margin-bottom: 1vw;">
+          <h5>
+            My Website
+          </h5>
+      </div>
+      <div class ="row justify-content-center">
+        <a class = "link" href="https://floating-harbor-56550.herokuapp.com/" style="font-size: 1.5vw;"> <b> Sydney's Press Page Redesign </b> </a> 
+      </div>
+
+      <div class = "row" style="background-color: #FAE3D1; padding:3vw;">
+          <p>
+            I coded my website exactly based on my hi-fi prototype. See the screenshots below to see the web view, tablet view, and phone view. I also tested my website using WAVE and found out I have fixed the alternative text error mentioned above.
+          </p>    
+      </div>
+
+      <div class = "row justify-content-center" style="background-color: #FAE3D1; padding-top:3vw; padding-bottom:3vw; margin-top: 0px; margin-bottom: 0px;">
+        <img class="prototypes" src="website-web.png">
+        <img class="prototypes" src="website-pad.png"> 
+      </div>
+      <div class = "row justify-content-center" style="background-color: #FAE3D1; padding-bottom:3vw; margin-top: 0px;">
+        <img class="prototypes" src="website-phone.png" style="width: 25vw; padding-right: 2vw">
+        <img class="prototypes" src="website-phone2.png" style="width: 25vw; padding-right: 2vw">
+      </div>
+
+  </div>
+
+</body>
+
+</head>
+</html>	
